@@ -1,0 +1,21 @@
+{
+  "require": {
+    "noahbuscher/macaw": "dev-master",
+    "illuminate/database": "*",
+    "filp/whoops": "*",
+    "nette/mail": "*",
+    "predis/predis": "*",
+    "curl/curl": "^2.2",
+    "guzzlehttp/guzzle": "^6.3"
+  },
+  "autoload": {
+    "classmap": [
+      "app/controllers",
+      "app/models",
+      "services"
+    ],
+    "files": [
+      "app/helpers/functions.php"
+    ]
+  }
+}
