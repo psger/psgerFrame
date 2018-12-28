@@ -12,7 +12,7 @@ return [
 
     'username' => '2602662961@qq.com',
 
-    'password' => 'ztvkawowxicrebbg',
+    'password' => '',
 
     'secure' => ''
 
