@@ -17,14 +17,5 @@ return [
     'collation' => 'utf8_general_ci',
     'prefix'    => ''
 
-    //we+主库
-//    'driver'    => 'mysql',
-//    'host'      => '192.168.180.184',
-//    'port'      => '3964',
-//    'database'  => 'we+',
-//    'username'  => 'zongwei.lei',
-//    'password'  => 'Weiphone20181120Q!',
-//    'charset'   => 'utf8',
-//    'collation' => 'utf8_general_ci',
-//    'prefix'    => ''
+
 ];
