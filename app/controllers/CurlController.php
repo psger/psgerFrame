@@ -10,14 +10,22 @@ class CurlController
 {
     public function del()
     {
-        $fileName = '../needDeleteEntityIdsInEs.txt';
+        $begin = getCurrentTime();
+
         $start = 0;
         $limit = 1000;
-        for ($i = 0; $i < ceil(272650 / 1000); $i++) {
+        $fileName = '../newNeedDeleteEntityIdsInEs.txt';
+        $line = count_line($fileName);
+        for ($i = 0; $i <= ceil($line / 1000); $i++) {
             $result = get_line($fileName, $start, $limit);
             $this->deleteIpaWithEntityId($result);
             $start += $limit;
         }
+
+        $end = getCurrentTime();
+        $spend = $end-$begin;
+        echo "执行时间为:".$spend."\n";
+
     }
 
     public function deleteIpaWithEntityId($result)
@@ -30,7 +38,6 @@ class CurlController
         $end = end($params['entityIds']);
         $sum = count($params['entityIds']);
 
-
         $options = json_encode($params);
 //        echo $options;exit;
         $data = [
@@ -42,11 +49,7 @@ class CurlController
         $response = $client->post('http://192.168.182.182:8000/search/bulkdelrows', $data);
         $body = json_decode($response->getBody(), true);
 
-        var_dump($body['data']['result']);
-        file_put_contents('results.txt', $body['data']['result'] . '|' .$first.'~'.$end.'|'.$sum . PHP_EOL, FILE_APPEND | LOCK_EX);
+        file_put_contents('result.txt', $body['data']['result'] . '|' .$first.'~'.$end.'|'.$sum . PHP_EOL, FILE_APPEND | LOCK_EX);
     }
-
-
-
 
 }

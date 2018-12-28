@@ -26,15 +26,15 @@ class BaseController
 //
 //        }
 //
-//        $mail = $this->mail;
-//
-//        if ( $mail instanceof Mail ) {
-//
-//            $mailer = new Nette\Mail\SmtpMailer($mail->config);
-//
-//            $mailer->send($mail);
-//
-//        }
+        $mail = $this->mail;
+
+        if ( $mail instanceof Mail ) {
+
+            $mailer = new Nette\Mail\SmtpMailer($mail->config);
+
+            $mailer->send($mail);
+
+        }
 
     }
 

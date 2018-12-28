@@ -10,6 +10,7 @@ return array(
     'BaseController' => $baseDir . '/app/controllers/BaseController.php',
     'BasicUserInfo' => $baseDir . '/app/models/BasicUserInfo.php',
     'BasicUserInfoVip' => $baseDir . '/app/models/BasicUserInfoVip.php',
+    'CsvController' => $baseDir . '/app/controllers/CsvController.php',
     'CurlController' => $baseDir . '/app/controllers/CurlController.php',
     'HomeController' => $baseDir . '/app/controllers/HomeController.php',
     'Mail' => $baseDir . '/services/Mail.php',

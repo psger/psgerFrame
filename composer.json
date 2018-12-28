@@ -6,7 +6,8 @@
     "nette/mail": "*",
     "predis/predis": "*",
     "curl/curl": "^2.2",
-    "guzzlehttp/guzzle": "^6.3"
+    "guzzlehttp/guzzle": "^6.3",
+    "league/csv": "^9.1"
   },
   "autoload": {
     "classmap": [
