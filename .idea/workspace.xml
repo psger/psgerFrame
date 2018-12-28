@@ -263,21 +263,20 @@
       <workItem from="1545811045667" duration="347000" />
       <workItem from="1545811488086" duration="3040000" />
       <workItem from="1545819762955" duration="13245000" />
-      <workItem from="1545960729536" duration="7821000" />
+      <workItem from="1545960729536" duration="8178000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35172000" />
+    <option name="totallyTimeSpent" value="35529000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-568" y="-1440" width="2560" height="1440" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.14654487" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.14654487" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.4985229" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.4985229" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" />

@@ -12,7 +12,7 @@ return [
     'port'      => '8889',
     'database'  => 'psger',
     'username'  => 'root',
-    'password'  => 'passenger',
+    'password'  => '',
     'charset'   => 'utf8',
     'collation' => 'utf8_general_ci',
     'prefix'    => ''
